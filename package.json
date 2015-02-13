@@ -1,12 +1,12 @@
 {
-  "name": "sortable-hash",
-  "description": "Hash arrays of numbers into sortable strings with variable precision loss",
+  "name": "binary-sortable-hash",
+  "description": "Hash an array of numbers into a sortable(ish) binary number.",
   "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/juliangruber/sortable-hash.git"
+    "url": "git://github.com/rt2zz/binary-sortable-hash.git"
   },
-  "homepage": "https://github.com/juliangruber/sortable-hash",
+  "homepage": "git://github.com/rt2zz/binary-sortable-hash.git",
   "main": "index.js",
   "scripts": {
     "test": "tape test/*.js"
@@ -20,26 +20,5 @@
     "geohash",
     "sortable"
   ],
-  "author": {
-    "name": "Julian Gruber",
-    "email": "mail@juliangruber.com",
-    "url": "http://juliangruber.com"
-  },
-  "license": "MIT",
-  "testling": {
-    "files": "test/*.js",
-    "browsers": [
-      "ie/8..latest",
-      "firefox/17..latest",
-      "firefox/nightly",
-      "chrome/22..latest",
-      "chrome/canary",
-      "opera/12..latest",
-      "opera/next",
-      "safari/5.1..latest",
-      "ipad/6.0..latest",
-      "iphone/6.0..latest",
-      "android-browser/4.2..latest"
-    ]
-  }
+  "license": "MIT"
 }
