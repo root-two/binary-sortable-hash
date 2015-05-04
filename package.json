@@ -1,7 +1,7 @@
 {
   "name": "binary-sortable-hash",
   "description": "Hash an array of numbers into a sortable(ish) binary number.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/rt2zz/binary-sortable-hash.git"
