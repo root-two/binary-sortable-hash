@@ -79,4 +79,4 @@ $ npm install binary-sortable-hash
 This is the idea of [geohashes](http://en.wikipedia.org/wiki/Geohash)
 generalized for use with all numeric data and numbers of input fields.
 
-binary-sortable-hash is a derivative of the awesome [sortable-hash](https://github.com/juliangruber/sortable-hash) by @juliangrubber
+binary-sortable-hash is a derivative of the awesome [sortable-hash](https://github.com/juliangruber/sortable-hash) by @juliangruber
