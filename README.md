@@ -14,9 +14,7 @@ sortable.encode([10, 11, -10]) === '11000100100111011001100110010000101110011000
 
 ## Usage
 
-Hash a lat/lon array representing Röcken Germany
-
-`[10, -10, 10]` and then restore it, using different
+Hash a lat/lon array representing Röcken Germany `{lat: 51.2408, lon: 12.1161}` and then restore it, using different
 hash sizes.
 
 ```js
@@ -29,13 +27,15 @@ var normalized = [100*rocken.lat/180, 100*rocken.lon/90]
 var hash = sortable.encode(normalized)
 // => '110010010010000100101111010001010001001110011100001100111111'
 
-sortable.decode(hash, 2);
-// => [ 51.24080015346408, 12.116099959239364 ]
+var decoded = sortable.decode(hash, 2);
+var restoredRockenCoords = { lat: decoded[0]*180/100, lon: decoded[1]*90/100 }
+// => { lat: 51.24080015346408, lon: 12.116099959239364 }
 
 var lowerFidelityHash = sortable.encode(normalized, 10)
 // => 1100100100
-sortable.decode(lowerFidelityHash, 2)
-// => [50.625, 14.0625]
+var decoded = sortable.decode(lowerFidelityHash, 2);
+var restoredRockenCoords = { lat: decoded[0]*180/100, lon: decoded[1]*90/100 }
+// => { lat: 50.625, lon: 14.0625 }
 
 var hexadecimalHash = parseInt(hash, 2).toString(16)
 // => c9212f45139c300 (limited precision beyond 53bits)
